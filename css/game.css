@@ -28,7 +28,6 @@
 }
 
 .front {
-    background-image: url('../assets/imagens/ericPrision.jpg');
     transform: rotateY(180deg);
 }
 
