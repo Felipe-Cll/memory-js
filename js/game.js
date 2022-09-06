@@ -3,8 +3,16 @@ const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 
 const characters = [
-    'Eric',
-    'Kenny',
+    'Bebe Stevens',
+    'Butters Stotch',
+    'Eric Cartman',
+    'Jimmy Valmer',
+    'Timmy Burch',
+    'Kyle Broflovski',
+    'Ike Broflovski',
+    'Nichole Daniels',
+    'Stan Marsh',
+    'Wendy Testaburguer'
 ];
 
 const createElement = (tag, className) => {
@@ -19,7 +27,7 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length == 4) {
+    if (disabledCards.length == 20) {
         clearInterval(this.loop);
         alert (`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
