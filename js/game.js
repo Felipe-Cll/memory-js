@@ -27,7 +27,7 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length == 20) {
+    if (disabledCards.length == 2) {
         clearInterval(this.loop);
         alert (`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
@@ -110,14 +110,26 @@ const loadGame = () => {
         const card = createCard(character);
         grid.appendChild(card);
     });
+
+    seconds = 0;
+    minutes = 0;
+    this.loop = setInterval(startTimer, 1000);
 }
+
+let seconds = 0, minutes = 0;
 
 const startTimer = () => {
 
-    this.loop = setInterval(() => {
-        const currentTime = +timer.innerHTML;
-        timer.innerHTML = currentTime + 1;
-    }, 1000);
+    seconds += 1;
+    
+    if (seconds >= 60) {
+        minutes += 1;
+        seconds = 0;
+    }
+
+    let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+    let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+    timer.innerHTML = `${minutesValue}:${secondsValue}`;
 }
 
 window.onload = () => {
