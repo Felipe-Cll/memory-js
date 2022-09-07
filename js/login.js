@@ -8,13 +8,13 @@ const validateInput = ({ target }) => {
         return;
     }
     button.setAttribute('disabled', '');
-}
+};
 
 const handleSubmit = () => {
     event.preventDefault();
     localStorage.setItem('player', input.value);
     window.location = 'pages/game.html';
-}
+};
 
 input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);

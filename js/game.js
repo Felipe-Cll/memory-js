@@ -19,7 +19,7 @@ const createElement = (tag, className) => {
     const element = document.createElement(tag);
     element.className = className;
     return element;
-}
+};
 
 let firstCard = '';
 let secondCard = '';
@@ -27,11 +27,11 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length == 2) {
+    if (disabledCards.length == 20) {
         clearInterval(this.loop);
         alert (`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
-}
+};
 
 const checkCards = () => {
     const firstCharacter = firstCard.getAttribute('data-character');
@@ -60,7 +60,7 @@ const checkCards = () => {
         }, 500);
 
     }
-}
+};
 
 const revealCard = ({ target }) => {
 
@@ -114,7 +114,7 @@ const loadGame = () => {
     seconds = 0;
     minutes = 0;
     this.loop = setInterval(startTimer, 1000);
-}
+};
 
 let seconds = 0, minutes = 0;
 
@@ -130,11 +130,11 @@ const startTimer = () => {
     let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
     let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
     timer.innerHTML = `${minutesValue}:${secondsValue}`;
-}
+};
 
 window.onload = () => {
 
     spanPlayer.innerHTML = localStorage.getItem('player');
     startTimer();
     loadGame();
-}
+};

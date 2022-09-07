@@ -98,3 +98,15 @@ footer, a:hover {
     cursor: pointer;
     color: #121212;
 }
+
+@media(max-width: 425px) {
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
