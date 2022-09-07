@@ -1,4 +1,11 @@
 @import url(//db.onlinewebfonts.com/c/004826d02423896e9030c0813b248ca8?family=South+Park);
+@font-face {font-family: "South Park"; src: 
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.eot"),
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/004826d02423896e9030c0813b248ca8.svg#South Park") format("svg"); }
 
 * {
     margin: 0;
