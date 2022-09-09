@@ -1,6 +1,6 @@
 <h1 align="center">🃏 Memory Game 🎭</h1>
 <p align="center">
-  <img src="/assets/toReadme/#.gif">
+  <img src="/assets/toReadme/memoryRM.gif">
 </p>
 
 ## :books: Informações
@@ -30,7 +30,7 @@ Adicionei algumas coisas como:
 
 <br/>
 <ul>
-  <li>Para acessar o site: clique em <a href="#" target="_blank">Memory</a></li>
+  <li>Para acessar o site: clique em <a href="https://felipe-cll.github.io/memory-js/" target="_blank">Memory</a></li>
 </ul>
 
 ## :pushpin: Tecnologias
@@ -39,6 +39,3 @@ Adicionei algumas coisas como:
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
   <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a></li>
 </ul>
-
-## :balance_scale: Licença
-Consulte o arquivo <a href="#" target="_blank">LICENSE</a> para obter mais detalhes.
